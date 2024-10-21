@@ -1,0 +1,168 @@
+{
+	"easycom": {
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "头像",
+				"navigationBarBackgroundColor": "#579EFF",
+				"enablePullDownRefresh": true,
+				"navigationBarTextStyle": "white"
+					// #ifdef H5
+					,
+				"navigationStyle": "custom"
+				// #endif 
+			}
+		}, {
+			"path": "pages/my/index",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"navigationBarBackgroundColor": "#579EFF",
+				"navigationBarTextStyle": "white"
+			}
+		}, {
+			"path": "pages/index/make",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationBarBackgroundColor": "#579EFF",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"bounce": "none",
+					"scrollIndicator": "none",
+					"titleNView": true
+				}
+			}
+		}, {
+			"path": "pages/my/history",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"bounce": "none",
+					"scrollIndicator": "none",
+					"titleNView": true
+				}
+			}
+		}, {
+			"path": "pages/my/webView",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+		}, {
+			"path": "pages/my/userInfo",
+			"style": {
+				"navigationBarTitleText": "编辑资料",
+				"navigationBarBackgroundColor": "#579EFF",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"bounce": "none",
+					"scrollIndicator": "none",
+					"titleNView": true
+				}
+			}
+		}, {
+			"path": "pages/my/invitationUser",
+			"style": {
+				"navigationBarTitleText": "分享好友",
+				"navigationBarBackgroundColor": "#579EFF",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": false,
+				"app-plus": {
+					"bounce": "none",
+					"scrollIndicator": "none",
+					"titleNView": true
+				}
+			}
+		},
+		{
+			"path": "pages/public/login",
+			"style": {
+				"navigationBarTitleText": "登录"
+					// #ifdef H5
+					,
+				"navigationStyle": "custom"
+				// #endif 
+			}
+		},
+		{
+			"path": "pages/public/bind",
+			"style": {
+				"navigationBarTitleText": "换绑手机号"
+					// #ifdef H5
+					,
+				"navigationStyle": "custom"
+				// #endif 
+			}
+		},
+		{
+			"path": "pages/public/forgetPwd",
+			"style": {
+				"navigationBarTitleText": "重置密码"
+					// #ifdef H5
+					,
+				"navigationStyle": "custom"
+				// #endif 
+			}
+		},
+
+		{
+			"path": "pages/public/loginphone",
+			"style": {
+				"navigationBarTitleText": "登录"
+					// #ifdef H5
+					,
+				"navigationStyle": "custom"
+				// #endif 
+			}
+		},
+		{
+			"path": "pages/public/pwd",
+			"style": {
+				"navigationBarTitleText": "修改密码"
+					// #ifdef H5
+					,
+				"navigationStyle": "custom"
+				// #endif 
+			}
+		},
+		{
+			"path": "pages/public/register",
+			"style": {
+				"navigationBarTitleText": "注册"
+					// #ifdef H5
+					,
+				"navigationStyle": "custom"
+				// #endif 
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "头像生成",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#FFFFFF"
+	},
+	"tabBar": {
+		"color": "#ffffff",
+		"selectedColor": "#579EFF",
+		"backgroundColor": "#C8DFFF",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "static/tabbar/index.png",
+				"selectedIconPath": "static/tabbar/index_.png",
+				"text": "头像"
+			},
+			{
+				"pagePath": "pages/my/index",
+				"iconPath": "static/tabbar/my.png",
+				"selectedIconPath": "static/tabbar/my_.png",
+				"text": "我的"
+			}
+		]
+	}
+}
